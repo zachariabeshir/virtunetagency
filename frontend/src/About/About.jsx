@@ -1,12 +1,17 @@
 import "./About.css";
 
+import About_Hero from "./About_Components/About_Hero.jsx";
+import About_Story from "./About_Components/About_Story.jsx";
+import About_Values from "./About_Components/About_Values.jsx";
+import About_CTA from "./About_Components/About_CTA.jsx";
+
 function About() {
   return (
     <>
-      <div>
-        <h1>VirtuNet Web Development</h1>
-        <p>Fastest growing Dev space</p>
-      </div>
+      <About_Hero />
+      <About_Story />
+      <About_Values />
+      <About_CTA />
     </>
   );
 }

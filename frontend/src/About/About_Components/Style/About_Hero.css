@@ -1,0 +1,90 @@
+.about-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: clamp(520px, 70vh, 760px);
+  display: flex;
+  align-items: center;
+  border-radius: 18px;
+  overflow: hidden;
+  margin: 24px auto 0;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    rgba(15, 23, 42, 0.78),
+    rgba(37, 99, 235, 0.4),
+    rgba(15, 23, 42, 0.55)
+  );
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  padding: clamp(28px, 6vw, 72px);
+  display: grid;
+  gap: 18px;
+  color: white;
+}
+
+.about-hero h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.1;
+}
+
+.about-hero p {
+  margin: 0;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.about-hero-actions {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 12px;
+}
+
+.btn {
+  text-decoration: none;
+  font-weight: 800;
+  padding: 12px 16px;
+  border-radius: 12px;
+  transition: transform 0.12s ease, background 0.15s ease;
+  text-align: center;
+}
+
+.btn.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #1e40af;
+  transform: translateY(-1px);
+}
+
+.btn.secondary {
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  .about-hero-actions {
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+  }
+}
