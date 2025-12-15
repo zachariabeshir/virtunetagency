@@ -1,0 +1,94 @@
+.home-trust {
+  padding: clamp(64px, 10vw, 120px) 0;
+  background: #f8fafc;
+}
+
+.home-trust-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  gap: 26px;
+}
+
+/* Section header */
+.home-trust-header {
+  max-width: 720px;
+  margin: 0 auto; /* centers the block */
+  text-align: center; /* centers the text */
+}
+
+.home-trust-header h2 {
+  margin: 0 0 12px 0;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  letter-spacing: -0.02em;
+  color: #0f172a;
+}
+
+.home-trust-header p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #475569;
+}
+
+/* Cards grid */
+.credibility-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* Individual card */
+.credibility-card {
+  background: white;
+  padding: 32px 28px;
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+
+  display: grid;
+  gap: 14px;
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.credibility-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+/* Accent number */
+.credibility-accent {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #2563eb;
+  letter-spacing: 0.08em;
+}
+
+/* Card text */
+.credibility-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #0f172a;
+}
+
+.credibility-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #475569;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .credibility-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .credibility-cards {
+    grid-template-columns: 1fr;
+  }
+}

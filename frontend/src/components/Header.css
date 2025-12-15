@@ -1,0 +1,126 @@
+:root {
+  --blue: #2563eb;
+  --blue-dark: #1e40af;
+  --text: #0f172a;
+  --border: #e5e7eb;
+  --bg: #ffffff;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Grid container */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  min-height: 72px;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 24px;
+}
+
+/* Logo */
+.logo {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  color: var(--blue);
+  line-height: 1;
+}
+
+/* Nav grid */
+.nav {
+  justify-self: end;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.98rem;
+  line-height: 1;
+  padding: 10px 4px;
+  border-radius: 10px;
+  transition: transform 0.12s ease, color 0.15s ease, background 0.15s ease;
+}
+
+.nav-link:hover {
+  color: var(--blue);
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.nav-link.active {
+  color: var(--blue);
+  background: rgba(37, 99, 235, 0.1);
+}
+
+/* CTA button link */
+.cta {
+  padding: 10px 16px;
+  background: var(--blue);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.cta:hover {
+  background: var(--blue-dark);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* Tablet: tighten spacing */
+@media (max-width: 900px) {
+  .header-container {
+    padding: 0 16px;
+    column-gap: 16px;
+  }
+
+  .nav {
+    gap: 16px;
+  }
+
+  .logo {
+    font-size: 1.35rem;
+  }
+}
+
+/* Mobile: stack + make links tap-friendly */
+@media (max-width: 640px) {
+  .header-container {
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+    padding: 12px 16px;
+  }
+
+  .nav {
+    justify-self: start;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav-link {
+    padding: 12px 10px;
+    text-align: center;
+  }
+
+  .cta {
+    grid-column: 1 / -1; /* CTA spans full width */
+  }
+}

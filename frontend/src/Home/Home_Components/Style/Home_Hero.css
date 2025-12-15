@@ -1,0 +1,151 @@
+:root {
+  --blue: #2563eb;
+  --blueDark: #1e40af;
+  --text: #0f172a;
+  --white: #ffffff;
+}
+
+.home-hero {
+  position: relative;
+  width: 100%;
+  min-height: clamp(520px, 70vh, 760px);
+  border-radius: 18px;
+  overflow: hidden;
+
+  /* background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* keeps hero aligned with the rest of your site */
+  max-width: 1200px;
+  margin: 24px auto 0;
+}
+
+/* gradient overlay (blue + dark for readability) */
+.home-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    rgba(15, 23, 42, 0.82) 0%,
+    rgba(37, 99, 235, 0.4) 45%,
+    rgba(15, 23, 42, 0.55) 100%
+  );
+}
+
+.home-hero-content {
+  position: relative;
+  z-index: 1;
+
+  height: 100%;
+  padding: clamp(28px, 6vw, 72px);
+
+  display: grid;
+  align-content: center;
+  gap: 18px;
+
+  max-width: 720px;
+}
+
+.home-hero-kicker {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.home-hero-title {
+  color: var(--white);
+  font-size: clamp(2rem, 4.3vw, 3.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.home-hero-subtitle {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.home-hero-actions {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.home-hero-btn {
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  transition: transform 0.12s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.home-hero-btn.primary {
+  background: var(--blue);
+  color: white;
+}
+
+.home-hero-btn.primary:hover {
+  background: var(--blueDark);
+  transform: translateY(-1px);
+}
+
+.home-hero-btn.secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.home-hero-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.16);
+  transform: translateY(-1px);
+}
+
+.home-hero-badges {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.home-hero-badge {
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(15, 23, 42, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Mobile: stack buttons + badges cleanly */
+@media (max-width: 640px) {
+  .home-hero {
+    border-radius: 14px;
+    margin: 16px auto 0;
+  }
+
+  .home-hero-actions {
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+  }
+
+  .home-hero-btn {
+    text-align: center;
+  }
+
+  .home-hero-badges {
+    grid-auto-flow: row;
+    justify-items: start;
+  }
+}
