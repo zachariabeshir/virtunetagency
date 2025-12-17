@@ -1,0 +1,115 @@
+.admin-page {
+  padding: 48px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.admin-box {
+  max-width: 520px;
+  margin: 0 auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 24px;
+  background: #fff;
+}
+.admin-form {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+.admin-form input {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+.admin-form button {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 800;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+.admin-top {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.admin-actions {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+}
+.admin-actions button {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  font-weight: 800;
+  cursor: pointer;
+}
+.admin-actions .danger {
+  background: #fee2e2;
+  border-color: #fecaca;
+}
+.admin-status.error {
+  color: #dc2626;
+  font-weight: 800;
+}
+.admin-table {
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+}
+.admin-row {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr 1fr 0.9fr;
+  gap: 12px;
+  padding: 14px;
+  border-top: 1px solid #eef2f7;
+  align-items: center;
+}
+.admin-row.head {
+  background: #f8fafc;
+  border-top: none;
+  font-weight: 900;
+}
+.row-actions {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 8px;
+  justify-content: start;
+}
+.row-actions button {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  font-weight: 800;
+  cursor: pointer;
+}
+.row-actions .danger {
+  background: #fee2e2;
+  border-color: #fecaca;
+}
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 0.95rem;
+}
+.empty {
+  padding: 18px;
+  color: #475569;
+}
+
+@media (max-width: 900px) {
+  .admin-row {
+    grid-template-columns: 1fr;
+  }
+  .admin-row.head {
+    display: none;
+  }
+}
