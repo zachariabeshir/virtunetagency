@@ -1,6 +1,6 @@
 .home-services {
   padding: clamp(64px, 10vw, 120px) 0;
-  background: #2563eb;
+  background: #f8fafc;
 }
 
 .home-services-container {
@@ -22,14 +22,14 @@
   margin: 0 0 12px 0;
   font-size: clamp(1.8rem, 3vw, 2.4rem);
   letter-spacing: -0.02em;
-  color: #ededed;
+  color: #0f172a;
 }
 
 .home-services-header p {
   margin: 0;
   font-size: 1.05rem;
   line-height: 1.7;
-  color: #b6b6b6;
+  color: #475569;
 }
 
 /* Grid */
@@ -58,14 +58,14 @@
 .service-card h3 {
   margin: 0;
   font-size: 1.2rem;
-  color: #ffffff;
+  color: #0f172a;
 }
 
 .service-card p {
   margin: 0;
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #ebebeb;
+  color: #475569;
 }
 
 /* Tablet */
