@@ -1,4 +1,5 @@
 import "./Contact.css";
+import { API_BASE } from "../config";
 import { useState } from "react";
 
 function Contact() {

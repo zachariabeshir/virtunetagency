@@ -1,4 +1,5 @@
 import "./Admin.css";
+import { API_BASE } from "../config";
 import { useEffect, useState } from "react";
 
 function Admin() {
