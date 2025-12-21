@@ -1,40 +1,47 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-const connectDB = require("./src/config/db");
-const contactRoutes = require("./src/routes/contactRoutes");
-
-const app = express();
-const adminRoutes = require("./src/routes/adminRoutes");
-
 const rateLimit = require("express-rate-limit");
 
+const connectDB = require("./src/config/db");
+const contactRoutes = require("./src/routes/contactRoutes");
+const adminRoutes = require("./src/routes/adminRoutes");
+
+const app = express();
+
+const allowed = [process.env.CLIENT_ORIGIN, "http://localhost:3000"].filter(
+  Boolean
+);
+
+app.use(
+  cors({
+    origin: (origin, cb) => {
+      if (!origin) return cb(null, true);
+      return allowed.includes(origin)
+        ? cb(null, true)
+        : cb(new Error("Not allowed by CORS"));
+    },
+    credentials: true,
+  })
+);
+
+app.use(express.json());
+
 const contactLimiter = rateLimit({
-  windowMs: 10 * 60 * 1000, // 10 min
-  max: 10, // 10 requests per IP per window
+  windowMs: 10 * 60 * 1000,
+  max: 10,
 });
 
 app.get("/", (req, res) => {
   res.send("VirtuNet API is running ✅");
 });
 
-app.use("/api/contact", contactLimiter);
-
-app.use(express.json());
-
-// CORS for local dev (frontend on 3000)
-app.use(
-  cors({
-    origin: process.env.CLIENT_ORIGIN,
-    methods: ["GET", "POST"],
-    allowedHeaders: ["Content-Type"],
-  })
-);
-
-// Health check
 app.get("/api/health", (req, res) => {
   res.json({ ok: true, status: "alive" });
 });
+
+// Apply rate limit to contact route
+app.use("/api/contact", contactLimiter);
 
 // Routes
 app.use("/api/contact", contactRoutes);
