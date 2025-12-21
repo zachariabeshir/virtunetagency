@@ -150,7 +150,7 @@ function Contact() {
               <h3>Quick details</h3>
               <div className="info-row">
                 <span>Location</span>
-                <span>Rancho Santa Margarita, CA</span>
+                <span>Orange County, CA</span>
               </div>
               <div className="info-row">
                 <span>Typical response</span>

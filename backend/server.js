@@ -7,6 +7,15 @@ const contactRoutes = require("./src/routes/contactRoutes");
 const app = express();
 const adminRoutes = require("./src/routes/adminRoutes");
 
+const rateLimit = require("express-rate-limit");
+
+const contactLimiter = rateLimit({
+  windowMs: 10 * 60 * 1000, // 10 min
+  max: 10, // 10 requests per IP per window
+});
+
+app.use("/api/contact", contactLimiter);
+
 app.use(express.json());
 
 // CORS for local dev (frontend on 3000)
