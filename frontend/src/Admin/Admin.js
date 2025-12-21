@@ -12,7 +12,7 @@ function Admin() {
     setStatus({ state: "sending", msg: "Logging in..." });
 
     try {
-      const res = await fetch("/api/admin/login", {
+      const res = await fetch(`${API_BASE}/api/admin/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ password }),
@@ -34,7 +34,7 @@ function Admin() {
     setStatus({ state: "sending", msg: "Loading messages..." });
 
     try {
-      const res = await fetch("/api/admin/messages", {
+      const res = await fetch(`${API_BASE}/api/admin/messages`, {
         headers: { Authorization: `Bearer ${activeToken}` },
       });
       const data = await res.json();
@@ -51,7 +51,7 @@ function Admin() {
     if (!window.confirm("Delete this message?")) return;
 
     try {
-      const res = await fetch(`/api/admin/messages/${id}`, {
+      const res = await fetch(`${API_BASE}/api/admin/messages/${id}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${token}` },
       });

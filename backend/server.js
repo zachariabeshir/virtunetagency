@@ -14,6 +14,10 @@ const contactLimiter = rateLimit({
   max: 10, // 10 requests per IP per window
 });
 
+app.get("/", (req, res) => {
+  res.send("VirtuNet API is running ✅");
+});
+
 app.use("/api/contact", contactLimiter);
 
 app.use(express.json());

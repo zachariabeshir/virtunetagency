@@ -24,7 +24,7 @@ function Contact() {
 
     try {
       // Later: point this to your backend route (example: /api/contact)
-      const res = await fetch("/api/contact", {
+      const res = await fetch(`${API_BASE}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -158,7 +158,7 @@ function Contact() {
               </div>
               <div className="info-row">
                 <span>Email</span>
-                <span>virtunetagency@gmail.com</span>
+                <span>virtunetagency@gm.com</span>
               </div>
             </div>
 
