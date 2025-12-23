@@ -9,21 +9,31 @@ const adminRoutes = require("./src/routes/adminRoutes");
 
 const app = express();
 
-const allowed = [process.env.CLIENT_ORIGIN, "http://localhost:3000"].filter(
-  Boolean
-);
+const allowed = [
+  process.env.CLIENT_ORIGIN, // your Vercel production domain
+  "http://localhost:3000", // local dev
+].filter(Boolean);
 
 app.use(
   cors({
     origin: (origin, cb) => {
+      // allow server-to-server / Postman
       if (!origin) return cb(null, true);
-      return allowed.includes(origin)
-        ? cb(null, true)
-        : cb(new Error("Not allowed by CORS"));
+
+      // allow exact matches + any vercel preview deployments
+      const isAllowed =
+        allowed.includes(origin) || origin.endsWith(".vercel.app");
+
+      return isAllowed ? cb(null, true) : cb(new Error("Not allowed by CORS"));
     },
     credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
+
+// handle preflight
+app.options("*", cors());
 
 app.use(express.json());
 
