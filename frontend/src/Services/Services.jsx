@@ -15,11 +15,10 @@ function Services() {
         <div className="services-container services-hero-content">
           <p className="services-kicker">Services</p>
           <h1 className="services-title">
-            Clear, modern websites built to look legit.
+            Turn search demand into consistent leads
           </h1>
           <p className="services-subtitle">
-            Choose a package below, or contact me for a custom build. Everything
-            is mobile-first, clean, and built with modern standards.
+            A simple, performance-focused system using Google Ads and optimized landing pages.
           </p>
 
           <div className="services-hero-actions">
@@ -37,39 +36,39 @@ function Services() {
       <section className="services-section">
         <div className="services-container">
           <div className="section-header">
-            <h2>Packages</h2>
-            <p>Simple options that cover what most businesses need.</p>
+            <h2>Plans</h2>
+            <p>Simple options focused on generating and improving lead flow.</p>
           </div>
 
           <div className="package-grid">
             <div className="package-card">
-              <h3>Starter Website</h3>
+              <h3>Launch</h3>
               <p className="package-desc">
-                A clean 4-page business site: Home, About, Services, Contact.
+                Get set up with a clean foundation and inital search presence. 
               </p>
               <ul className="package-list">
-                <li>Responsive layout</li>
-                <li>Basic SEO setup</li>
-                <li>Contact form</li>
-                <li>2 revision rounds</li>
+                <li>Google Ads account setup</li>
+                <li>Basic keyword targeting</li>
+                <li>Simple landing page</li>
+                <li>Conversion tracking setup</li>
               </ul>
               <Link to="/contact" className="card-cta">
-                Start Starter
+                Get Started
               </Link>
             </div>
 
             <div className="package-card featured">
               <p className="badge">Most Popular</p>
-              <h3>Business + Growth</h3>
+              <h3>Growth</h3>
               <p className="package-desc">
-                Extra sections + stronger conversion focus (CTAs, layout
-                strategy).
+                Ongoing campaign management focused on consistent lead generation.
               </p>
               <ul className="package-list">
-                <li>Everything in Starter</li>
-                <li>Extra sections (FAQ, testimonials later, etc.)</li>
-                <li>Performance + polish pass</li>
-                <li>3 revision rounds</li>
+                <li>Everything in Launch</li>
+                <li>Campaign management</li>
+                <li>Keyword expansion + optimization</li>
+                <li>Landing page improvements</li>
+                <li>Performance tracking</li>
               </ul>
               <Link to="/contact" className="card-cta">
                 Start Growth
@@ -77,19 +76,18 @@ function Services() {
             </div>
 
             <div className="package-card">
-              <h3>Custom Build</h3>
+              <h3>Scale</h3>
               <p className="package-desc">
-                Custom pages, special features, or MERN functionality when
-                needed.
+                Advanced strategy for businesses looking to grow volume and efficiency.
               </p>
               <ul className="package-list">
-                <li>Custom scope</li>
-                <li>API/forms/data features</li>
-                <li>Deployment support</li>
-                <li>Ongoing updates optional</li>
+                <li>Custom campaign structure</li>
+                <li>Multi-location or multi-service targeting</li>
+                <li>Advanced tracking & analytics</li>
+                <li>Ongoing optimization & scaling</li>
               </ul>
               <Link to="/contact" className="card-cta">
-                Request Custom
+                Request Plan
               </Link>
             </div>
           </div>
@@ -101,16 +99,16 @@ function Services() {
         <div className="services-container">
           <div className="section-header">
             <h2>What’s included</h2>
-            <p>No surprises — every build includes these standards.</p>
+            <p>Everything needed to support consistent lead generation — built in from the start.</p>
           </div>
 
           <div className="included-grid">
-            <div className="included-item">Mobile-first responsive design</div>
-            <div className="included-item">Fast load + clean structure</div>
-            <div className="included-item">Basic SEO (titles, metadata)</div>
-            <div className="included-item">Clear calls-to-action</div>
-            <div className="included-item">Contact form setup</div>
-            <div className="included-item">Launch checklist + testing</div>
+            <div className="included-item">Mobile-first, conversion ready design</div>
+            <div className="included-item">Fast load speeds + optimized structure</div>
+            <div className="included-item">Search-ready setup (titles, metadata)</div>
+            <div className="included-item">High-converting calls-to-action</div>
+            <div className="included-item">Lead capture from setup</div>
+            <div className="included-item">Launch testing + tracking setup</div>
           </div>
         </div>
       </section>
@@ -120,29 +118,29 @@ function Services() {
         <div className="services-container">
           <div className="section-header">
             <h2>How it works</h2>
-            <p>Fast, simple, and transparent from start to launch.</p>
+            <p>A simple system to start generating leads — quickly and clearly.</p>
           </div>
 
           <div className="steps-grid">
             <div className="step-card">
               <span>01</span>
-              <h3>Discovery</h3>
-              <p>Goals, pages, timeline.</p>
+              <h3>Strategy</h3>
+              <p>Understand your business, goals, and target customers.</p>
             </div>
             <div className="step-card">
               <span>02</span>
-              <h3>Design</h3>
-              <p>Structure + clean layout.</p>
+              <h3>Targeting</h3>
+              <p>Identify what your customers are searching for.</p>
             </div>
             <div className="step-card">
               <span>03</span>
-              <h3>Build</h3>
-              <p>Develop and review.</p>
+              <h3>Launch</h3>
+              <p>Run campaigns and connect them to conversion-focused pages.</p>
             </div>
             <div className="step-card">
               <span>04</span>
-              <h3>Launch</h3>
-              <p>Test, deploy, handoff.</p>
+              <h3>Optimize</h3>
+              <p>Refine performance to improve lead quality and cost.</p>
             </div>
           </div>
         </div>
@@ -153,28 +151,38 @@ function Services() {
         <div className="services-container">
           <div className="section-header">
             <h2>FAQ</h2>
-            <p>Quick answers to common questions.</p>
+            <p>Quick answers about how it works.</p>
           </div>
 
           <div className="faq">
             <div className="faq-item">
-              <h3>How long does a typical site take?</h3>
+              <h3>How long does it take to get started?</h3>
               <p>
-                Small business sites are usually fast once content is ready.
-                Timelines depend on scope.
+                Most campaigns can be planned and launched within a few days once we align on your goals and market.
               </p>
             </div>
             <div className="faq-item">
-              <h3>Do you provide hosting and a domain?</h3>
+              <h3>Do I need a website already?</h3>
               <p>
-                I can guide you through it and help set it up. You own your
-                domain and accounts.
+                No — we can use your existing site or set up a simple page designed to convert traffic into leads.
               </p>
             </div>
             <div className="faq-item">
-              <h3>Can you update the site later?</h3>
+              <h3>How do the leads come in?</h3>
               <p>
-                Yes — you can request changes or choose ongoing maintenance.
+                Leads come from people actively searching on Google and are directed to your business through targeted campaigns.
+              </p>
+            </div>
+            <div className="faq-item">
+              <h3>Do you manage everything?</h3>
+              <p>
+                Yes — from setup to ongoing optimization, everything is handled so you can focus on closing the leads.
+              </p>
+            </div>
+            <div className="faq-item">
+              <h3>Can this work for my business?How do the leads come in?</h3>
+              <p>
+                If people are searching for your service, there’s usually an opportunity. We’ll confirm this on the initial call.
               </p>
             </div>
           </div>

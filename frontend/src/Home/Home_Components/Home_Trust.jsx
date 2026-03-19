@@ -7,36 +7,32 @@ function Home_Trust() {
         <div className="home-trust-header">
           <h2>What you can expect</h2>
           <p>
-            Every project is approached with care, clarity, and modern standards
-            — no shortcuts, no fluff.
+            A simple, performance-focused approach — built to generate real leads, not just traffic.
           </p>
         </div>
 
         <div className="credibility-cards">
           <div className="credibility-card">
             <span className="credibility-accent">01</span>
-            <h3>Modern Development</h3>
+            <h3>Consistent Lead Flow</h3>
             <p>
-              Built using modern tools and clean code practices, not outdated
-              templates or bloated builders.
+              We connect your business with people actively searching for your service — bringing in steady, high-intent leads.
             </p>
           </div>
 
           <div className="credibility-card">
             <span className="credibility-accent">02</span>
-            <h3>Mobile-First Design</h3>
+            <h3>High-Converting Experience</h3>
             <p>
-              Every site is designed to look and function perfectly across
-              phones, tablets, and desktops.
+              Clean, fast, mobile-first pages designed to turn clicks into real inquiries and booked calls.
             </p>
           </div>
 
           <div className="credibility-card">
             <span className="credibility-accent">03</span>
-            <h3>Clear & Honest Process</h3>
+            <h3>Clear & Reliable Process</h3>
             <p>
-              Straightforward communication, realistic timelines, and full
-              transparency from start to launch.
+              Straightforward communication, quick turnarounds, and full transparency from start to scale.
             </p>
           </div>
         </div>

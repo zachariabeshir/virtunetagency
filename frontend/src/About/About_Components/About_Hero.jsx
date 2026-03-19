@@ -14,9 +14,10 @@ function About_Hero() {
       <div className="about-hero-content">
         <h1>About VirtuNet</h1>
         <p>
-          I’m Zacharia Beshir, a web developer in Orange County with a passion
-          for clean, modern websites. Learn more about my journey and why I
-          build.
+          I’m Zacharia Beshir, based in Orange County. 
+          I help businesses generate consistent leads 
+          using Google Search campaigns, supported by 
+          clean, conversion-focused pages.
         </p>
 
         <div className="about-hero-actions">

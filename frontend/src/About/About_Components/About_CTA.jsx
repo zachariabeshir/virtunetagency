@@ -7,16 +7,15 @@ function About_CTA() {
       <div className="about-cta-container">
         <div className="about-cta-box">
           <div className="about-cta-content">
-            <h2>Let’s build something clean and professional</h2>
+            <h2>Bring in customers, not just traffic</h2>
             <p>
-              If you’re looking for a modern website built with care and
-              clarity, I’d love to hear about your project.
+              A simple system using Google Search and clean pages to turn demand into real leads.
             </p>
           </div>
 
           <div className="about-cta-actions">
             <Link to="/contact" className="about-cta-btn primary">
-              Contact Me
+              Get a Lead Strategy
             </Link>
             <Link to="/services" className="about-cta-btn secondary">
               View Services

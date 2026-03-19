@@ -7,42 +7,43 @@ function About_Story() {
         <div className="about-story-text">
           <h2>My approach</h2>
           <p>
-            I started VirtuNet with a simple goal: to build clean, modern
-            websites without unnecessary complexity. Too many small businesses
-            are stuck with outdated designs, slow pages, or bloated tools that
-            don’t actually help them grow.
+            I started VirtuNet with a simple goal: to help businesses connect 
+            with real customers — not just have a presence online.
           </p>
           <p>
-            I focus on clarity, structure, and performance — building websites
-            that look professional, work smoothly on all devices, and are easy
-            to understand for both users and business owners.
+            Too many small businesses rely on outdated websites, random 
+            marketing, or tools that don’t actually bring in leads.
           </p>
           <p>
-            As a developer with an engineering background, I care deeply about
-            how things are built, not just how they look.
+            My focus is on clarity, structure, and performance — using 
+            Google Search campaigns to capture real demand, and simple, 
+            high-converting pages to turn that traffic into inquiries.
+          </p>
+          <p>
+            With an engineering background, I care about how everything 
+            works together — from the first click to the final conversion.
           </p>
         </div>
 
         <div className="about-story-points">
           <div className="story-point">
-            <h3>Clean & Modern</h3>
+            <h3>Clean & Focused</h3>
             <p>
-              Simple layouts, thoughtful spacing, and modern tools — no clutter.
+              Simple layouts built to guide users toward taking action — no clutter, no distractions.
             </p>
           </div>
 
           <div className="story-point">
             <h3>Mobile-First</h3>
             <p>
-              Designed to look and feel right on phones, tablets, and desktops.
+              Designed to perform where most traffic happens — on phones, tablets, and desktops.
             </p>
           </div>
 
           <div className="story-point">
-            <h3>Built With Care</h3>
+            <h3>Built for Results</h3>
             <p>
-              Every project gets full attention, clear communication, and honest
-              expectations.
+              Every project is structured to support lead generation, with clear communication and realistic expectations.
             </p>
           </div>
         </div>

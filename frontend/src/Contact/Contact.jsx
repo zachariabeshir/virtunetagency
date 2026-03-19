@@ -159,7 +159,7 @@ function Contact() {
               </div>
               <div className="info-row">
                 <span>Email</span>
-                <span>virtunetagency@gm.com</span>
+                <span>virtunetagency@gmail.com</span>
               </div>
             </div>
 

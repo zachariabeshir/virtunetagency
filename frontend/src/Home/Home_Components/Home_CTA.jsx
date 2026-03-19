@@ -7,10 +7,9 @@ function Home_CTA() {
       <div className="home-cta-container">
         <div className="home-cta-box">
           <div className="home-cta-content">
-            <h2>Ready to build your website?</h2>
+            <h2>Ready to get more customers?</h2>
             <p>
-              Let’s create something clean, fast, and professional — built to
-              look great on every device.
+              Let’s get your name out there so you can attract more HVAC customers.
             </p>
           </div>
 

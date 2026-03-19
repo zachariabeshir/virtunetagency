@@ -12,15 +12,14 @@ function Home_Hero() {
       <div className="home-hero-overlay" />
 
       <div className="home-hero-content">
-        <p className="home-hero-kicker">VirtuNet Web Development</p>
+        <p className="home-hero-kicker">VirtuNet Business Development</p>
 
         <h1 className="home-hero-title">
-          Clean, responsive websites that convert.
+          Strategic Marketing that generates leads.
         </h1>
 
         <p className="home-hero-subtitle">
-          We design and build modern, mobile-first websites using proven tools —
-          without bloated timelines or fluff.
+          We use digital platforms to connect HVAC businesses with their ideal customers.
         </p>
 
         <div className="home-hero-actions">
@@ -33,9 +32,9 @@ function Home_Hero() {
         </div>
 
         <div className="home-hero-badges" aria-label="Highlights">
-          <span className="home-hero-badge">Fast delivery</span>
-          <span className="home-hero-badge">Mobile-first</span>
-          <span className="home-hero-badge">Modern stack</span>
+          <span className="home-hero-badge">Lead Generation</span>
+          <span className="home-hero-badge">Mobile-first Web Design</span>
+          <span className="home-hero-badge">Digital Marketing</span>
         </div>
       </div>
     </section>

@@ -7,8 +7,7 @@ function About_Values() {
         <div className="about-values-header">
           <h2>Standards I build with</h2>
           <p>
-            No overpromising. No clutter. Just a clean build that’s fast,
-            readable, and designed to convert.
+            No overpromising. No clutter. Just a clean system built to perform and convert.
           </p>
         </div>
 
@@ -16,48 +15,42 @@ function About_Values() {
           <div className="value-card">
             <h3>Clarity over hype</h3>
             <p>
-              Simple messaging, clear layouts, and straightforward decisions
-              that help customers understand you fast.
+              Simple messaging and clear layouts that help customers understand your offer and take action quickly.
             </p>
           </div>
 
           <div className="value-card">
             <h3>Performance matters</h3>
             <p>
-              Clean structure and modern best practices so pages feel fast and
-              smooth on real devices.
+              Fast-loading pages and clean structure so your site performs well under real traffic.
             </p>
           </div>
 
           <div className="value-card">
             <h3>Mobile-first always</h3>
             <p>
-              The site is designed for phones first, then scaled up to look
-              great on larger screens.
+              Designed for where your customers are — phones first, then scaled to every screen.
             </p>
           </div>
 
           <div className="value-card">
             <h3>Honest process</h3>
             <p>
-              Clear timelines, consistent updates, and no confusing “agency
-              talk.” You’ll always know what’s happening.
+              Clear timelines, consistent updates, and straightforward communication from start to scale.
             </p>
           </div>
 
           <div className="value-card">
             <h3>Clean, maintainable code</h3>
             <p>
-              Organized components, sensible structure, and code that’s easy to
-              extend as your business grows.
+              Structured builds that are easy to adjust as campaigns evolve and your business grows.
             </p>
           </div>
 
           <div className="value-card">
             <h3>Built to convert</h3>
             <p>
-              Strong calls-to-action, clean sections, and a layout designed to
-              guide users to contact you.
+              Every page is designed to guide visitors toward contacting you — not just browsing.
             </p>
           </div>
         </div>

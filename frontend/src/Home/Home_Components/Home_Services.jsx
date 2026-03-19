@@ -5,43 +5,43 @@ function Home_Services() {
     <section className="home-services">
       <div className="home-services-container">
         <div className="home-services-header">
-          <h2>Services</h2>
+          <h2>Customer Aquisition Systems</h2>
           <p>
-            Clean, modern websites built with a focus on performance, usability,
-            and clarity.
+            We use Google Search Ads to bring in high-intent buyers — then convert them into real 
+            leads and revenue.
           </p>
         </div>
 
         <div className="services-grid">
           <div className="service-card">
-            <h3>Business Websites</h3>
+            <h3>Google Search Ads Management</h3>
             <p>
-              Professional multi-page websites designed to represent your
-              business clearly and confidently.
+              We put your business in front of people actively searching for your service — capturing 
+              high-intent leads ready to convert.
             </p>
           </div>
 
           <div className="service-card">
-            <h3>Landing Pages</h3>
+            <h3>Lead Conversion Systems</h3>
             <p>
-              Focused, conversion-driven pages for promotions, ads, or product
-              launches.
+              We build and optimize landing pages that turn ad traffic into booked calls, form 
+              submissions, and paying customers.
             </p>
           </div>
 
           <div className="service-card">
-            <h3>Website Redesigns</h3>
+            <h3>Keyword & Market Targeting</h3>
             <p>
-              Refresh outdated websites with a modern look, improved structure,
-              and better performance.
+              We identify exactly what your customers are searching for and position your business 
+              where it matters most.
             </p>
           </div>
 
           <div className="service-card">
-            <h3>Maintenance & Updates</h3>
+            <h3>Campaign Optimization & Scaling</h3>
             <p>
-              Ongoing updates, fixes, and improvements to keep your site running
-              smoothly.
+              Continuous testing, data analysis, and scaling strategies to reduce cost per lead 
+              and maximize ROI.
             </p>
           </div>
         </div>
