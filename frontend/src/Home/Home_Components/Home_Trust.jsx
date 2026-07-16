@@ -6,33 +6,46 @@ function Home_Trust() {
       <div className="home-trust-container">
         <div className="home-trust-header">
           <h2>What you can expect</h2>
+
           <p>
-            A simple, performance-focused approach — built to generate real leads, not just traffic.
+            A transparent, data-driven approach focused on building
+            sustainable lead-generation systems for your business.
           </p>
         </div>
 
         <div className="credibility-cards">
           <div className="credibility-card">
             <span className="credibility-accent">01</span>
-            <h3>Consistent Lead Flow</h3>
+
+            <h3>High-Intent Customer Acquisition</h3>
+
             <p>
-              We connect your business with people actively searching for your service — bringing in steady, high-intent leads.
+              Your campaigns are built around people actively searching for
+              your services, helping you reach prospects with real purchase
+              intent.
             </p>
           </div>
 
           <div className="credibility-card">
             <span className="credibility-accent">02</span>
-            <h3>High-Converting Experience</h3>
+
+            <h3>Continuous Optimization</h3>
+
             <p>
-              Clean, fast, mobile-first pages designed to turn clicks into real inquiries and booked calls.
+              Campaigns are regularly monitored and refined using performance
+              data to improve lead quality and reduce wasted ad spend over
+              time.
             </p>
           </div>
 
           <div className="credibility-card">
             <span className="credibility-accent">03</span>
-            <h3>Clear & Reliable Process</h3>
+
+            <h3>Transparent Partnership</h3>
+
             <p>
-              Straightforward communication, quick turnarounds, and full transparency from start to scale.
+              Clear communication, measurable reporting, and a focus on
+              long-term growth rather than short-term marketing tactics.
             </p>
           </div>
         </div>

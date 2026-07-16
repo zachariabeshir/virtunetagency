@@ -9,7 +9,7 @@ function Home_CTA() {
           <div className="home-cta-content">
             <h2>Ready to get more customers?</h2>
             <p>
-              Let’s get your name out there so you can attract more HVAC customers.
+              Let’s get your name out there so you can attract more qualified customers.
             </p>
           </div>
 

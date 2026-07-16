@@ -24,15 +24,11 @@ function Contact() {
     setStatus({ state: "sending", msg: "Sending..." });
 
     try {
-      // Later: point this to your backend route (example: /api/contact)
       const res = await fetch(`${API_BASE}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
-
-      // If backend isn't ready yet, you can temporarily comment out fetch
-      // and simulate success instead.
 
       if (!res.ok) {
         throw new Error("Request failed");
@@ -40,13 +36,19 @@ function Contact() {
 
       setStatus({
         state: "success",
-        msg: "Message sent! I’ll get back to you soon.",
+        msg: "Message sent! We’ll review your goals and get back to you soon.",
       });
-      setForm({ name: "", email: "", company: "", message: "" });
+
+      setForm({
+        name: "",
+        email: "",
+        company: "",
+        message: "",
+      });
     } catch (err) {
       setStatus({
         state: "error",
-        msg: "Something went wrong. Please try again or email me directly.",
+        msg: "Something went wrong. Please try again or email us directly.",
       });
     }
   }
@@ -55,10 +57,10 @@ function Contact() {
     <div className="contact-page">
       <section className="contact-hero">
         <div className="contact-container">
-          <h1>Contact</h1>
+          <h1>Let’s grow your business</h1>
           <p>
-            Tell me what you’re building. I’ll respond with next steps, a
-            timeline, and a clear plan.
+            Tell us about your business, your current marketing, and the
+            results you want to achieve. We’ll respond with clear next steps.
           </p>
         </div>
       </section>
@@ -66,10 +68,11 @@ function Contact() {
       <section className="contact-section">
         <div className="contact-container contact-grid">
           <div className="contact-card">
-            <h2>Send a message</h2>
+            <h2>Request a consultation</h2>
+
             <p className="contact-note">
-              No pressure — just share what you need. The more details, the
-              better.
+              No pressure and no generic sales pitch. Share a few details so
+              we can determine whether VirtuNet is a strong fit for your goals.
             </p>
 
             <form onSubmit={handleSubmit} className="contact-form">
@@ -87,13 +90,13 @@ function Contact() {
                 </div>
 
                 <div className="field">
-                  <label htmlFor="email">Email</label>
+                  <label htmlFor="email">Business email</label>
                   <input
                     id="email"
                     name="email"
                     value={form.email}
                     onChange={handleChange}
-                    placeholder="you@email.com"
+                    placeholder="you@company.com"
                     type="email"
                     required
                   />
@@ -101,7 +104,7 @@ function Contact() {
               </div>
 
               <div className="field">
-                <label htmlFor="company">Company (optional)</label>
+                <label htmlFor="company">Company</label>
                 <input
                   id="company"
                   name="company"
@@ -112,13 +115,13 @@ function Contact() {
               </div>
 
               <div className="field">
-                <label htmlFor="message">What do you need?</label>
+                <label htmlFor="message">Tell us about your goals</label>
                 <textarea
                   id="message"
                   name="message"
                   value={form.message}
                   onChange={handleChange}
-                  placeholder="Pages you want, style you like, deadline, etc."
+                  placeholder="What services do you offer, how are you currently generating leads, and what results are you looking for?"
                   rows="6"
                   required
                 />
@@ -129,7 +132,9 @@ function Contact() {
                 type="submit"
                 disabled={status.state === "sending"}
               >
-                {status.state === "sending" ? "Sending..." : "Send Message"}
+                {status.state === "sending"
+                  ? "Sending..."
+                  : "Request Consultation"}
               </button>
 
               {status.state !== "idle" && (
@@ -149,14 +154,22 @@ function Contact() {
           <aside className="contact-side">
             <div className="info-box">
               <h3>Quick details</h3>
+
               <div className="info-row">
                 <span>Location</span>
                 <span>Orange County, CA</span>
               </div>
+
+              <div className="info-row">
+                <span>Primary service</span>
+                <span>Google Search Ads</span>
+              </div>
+
               <div className="info-row">
                 <span>Typical response</span>
                 <span>Within 24–48 hours</span>
               </div>
+
               <div className="info-row">
                 <span>Email</span>
                 <span>virtunetagency@gmail.com</span>
@@ -164,12 +177,14 @@ function Contact() {
             </div>
 
             <div className="info-box">
-              <h3>What helps most</h3>
+              <h3>What helps us prepare</h3>
+
               <ul className="help-list">
-                <li>What pages you need (Home, Services, etc.)</li>
-                <li>Any examples of sites you like</li>
-                <li>Your timeline / deadline</li>
-                <li>Whether you need a contact form or database</li>
+                <li>The services you want to promote</li>
+                <li>The locations you currently serve</li>
+                <li>Your current lead-generation process</li>
+                <li>Your monthly marketing budget</li>
+                <li>Your lead or revenue goals</li>
               </ul>
             </div>
           </aside>

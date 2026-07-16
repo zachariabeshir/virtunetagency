@@ -5,43 +5,49 @@ function Home_Services() {
     <section className="home-services">
       <div className="home-services-container">
         <div className="home-services-header">
-          <h2>Customer Aquisition Systems</h2>
+          <h2>Customer Acquisition Systems</h2>
+
           <p>
-            We use Google Search Ads to bring in high-intent buyers — then convert them into real 
-            leads and revenue.
+            We use Google Search Ads, conversion-focused landing pages, and
+            performance tracking to turn high-intent searches into qualified
+            business opportunities.
           </p>
         </div>
 
         <div className="services-grid">
           <div className="service-card">
             <h3>Google Search Ads Management</h3>
+
             <p>
-              We put your business in front of people actively searching for your service — capturing 
-              high-intent leads ready to convert.
+              Reach potential customers at the moment they are actively
+              searching for the services your business provides.
             </p>
           </div>
 
           <div className="service-card">
-            <h3>Lead Conversion Systems</h3>
+            <h3>Conversion-Focused Landing Pages</h3>
+
             <p>
-              We build and optimize landing pages that turn ad traffic into booked calls, form 
-              submissions, and paying customers.
+              Create a clear path from ad click to phone call or form
+              submission with focused messaging and strong calls to action.
             </p>
           </div>
 
           <div className="service-card">
-            <h3>Keyword & Market Targeting</h3>
+            <h3>Keyword and Market Targeting</h3>
+
             <p>
-              We identify exactly what your customers are searching for and position your business 
-              where it matters most.
+              Identify valuable searches, target the right service areas, and
+              focus your budget on the customers most likely to take action.
             </p>
           </div>
 
           <div className="service-card">
-            <h3>Campaign Optimization & Scaling</h3>
+            <h3>Campaign Optimization and Scaling</h3>
+
             <p>
-              Continuous testing, data analysis, and scaling strategies to reduce cost per lead 
-              and maximize ROI.
+              Continuously improve targeting, ads, and budget allocation to
+              reduce wasted spend and create more efficient growth.
             </p>
           </div>
         </div>

@@ -9,85 +9,115 @@ function Services() {
       <section
         className="services-hero image"
         style={{ backgroundImage: `url(${heroImage})` }}
+        aria-label="Digital marketing services"
       >
         <div className="services-hero-overlay" />
 
         <div className="services-container services-hero-content">
-          <p className="services-kicker">Services</p>
+          <p className="services-kicker">Performance Marketing Services</p>
+
           <h1 className="services-title">
-            Turn search demand into consistent leads
+            Turn Google searches into qualified leads
           </h1>
+
           <p className="services-subtitle">
-            A simple, performance-focused system using Google Ads and optimized landing pages.
+            Strategic Google Ads management built to capture high-intent
+            demand, reduce wasted ad spend, and create a consistent pipeline
+            of new business opportunities.
           </p>
 
           <div className="services-hero-actions">
             <Link to="/contact" className="btn primary">
-              Get a Quote
+              Request a Consultation
             </Link>
+
             <Link to="/contact" className="btn secondary">
-              Ask a Question
+              Discuss Your Goals
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Packages */}
+      {/* Services */}
       <section className="services-section">
         <div className="services-container">
           <div className="section-header">
-            <h2>Plans</h2>
-            <p>Simple options focused on generating and improving lead flow.</p>
+            <h2>How we help</h2>
+            <p>
+              A focused marketing system designed to attract, track, and
+              convert customers actively searching for your services.
+            </p>
           </div>
 
           <div className="package-grid">
             <div className="package-card">
-              <h3>Launch</h3>
+              <h3>Campaign Launch</h3>
+
               <p className="package-desc">
-                Get set up with a clean foundation and inital search presence. 
+                Build a strong Google Ads foundation around your services,
+                market, and ideal customers.
               </p>
+
               <ul className="package-list">
-                <li>Google Ads account setup</li>
-                <li>Basic keyword targeting</li>
-                <li>Simple landing page</li>
+                <li>Market and competitor research</li>
+                <li>Keyword and search-intent research</li>
+                <li>Google Ads campaign setup</li>
+                <li>Ad copywriting</li>
                 <li>Conversion tracking setup</li>
+                <li>Landing page recommendations</li>
               </ul>
+
               <Link to="/contact" className="card-cta">
-                Get Started
+                Launch a Campaign
               </Link>
             </div>
 
             <div className="package-card featured">
-              <p className="badge">Most Popular</p>
-              <h3>Growth</h3>
+              <p className="badge">Core Service</p>
+
+              <h3>Lead Generation</h3>
+
               <p className="package-desc">
-                Ongoing campaign management focused on consistent lead generation.
+                Ongoing campaign management focused on generating qualified
+                leads while improving cost and performance over time.
               </p>
+
               <ul className="package-list">
-                <li>Everything in Launch</li>
-                <li>Campaign management</li>
-                <li>Keyword expansion + optimization</li>
-                <li>Landing page improvements</li>
-                <li>Performance tracking</li>
+                <li>Everything in Campaign Launch</li>
+                <li>Ongoing Google Ads management</li>
+                <li>Search-term and keyword optimization</li>
+                <li>Negative keyword management</li>
+                <li>Ad copy testing</li>
+                <li>Lead and conversion tracking</li>
+                <li>Monthly performance reporting</li>
               </ul>
+
               <Link to="/contact" className="card-cta">
-                Start Growth
+                Start Generating Leads
               </Link>
             </div>
 
             <div className="package-card">
-              <h3>Scale</h3>
+              <h3>Growth & Scale</h3>
+
               <p className="package-desc">
-                Advanced strategy for businesses looking to grow volume and efficiency.
+                Advanced campaign strategy for established businesses ready
+                to increase lead volume, expand into new markets, or promote
+                additional services.
               </p>
+
               <ul className="package-list">
-                <li>Custom campaign structure</li>
-                <li>Multi-location or multi-service targeting</li>
-                <li>Advanced tracking & analytics</li>
-                <li>Ongoing optimization & scaling</li>
+                <li>Advanced campaign restructuring</li>
+                <li>Multi-service campaign management</li>
+                <li>Multi-location targeting</li>
+                <li>Budget allocation and scaling</li>
+                <li>Advanced conversion tracking</li>
+                <li>Landing page testing strategy</li>
+                <li>Lead-quality analysis</li>
               </ul>
+
               <Link to="/contact" className="card-cta">
-                Request Plan
+                Request a Growth Plan
               </Link>
             </div>
           </div>
@@ -99,16 +129,45 @@ function Services() {
         <div className="services-container">
           <div className="section-header">
             <h2>What’s included</h2>
-            <p>Everything needed to support consistent lead generation — built in from the start.</p>
+
+            <p>
+              The strategy, tracking, and ongoing management needed to turn
+              your advertising budget into measurable business opportunities.
+            </p>
           </div>
 
           <div className="included-grid">
-            <div className="included-item">Mobile-first, conversion ready design</div>
-            <div className="included-item">Fast load speeds + optimized structure</div>
-            <div className="included-item">Search-ready setup (titles, metadata)</div>
-            <div className="included-item">High-converting calls-to-action</div>
-            <div className="included-item">Lead capture from setup</div>
-            <div className="included-item">Launch testing + tracking setup</div>
+            <div className="included-item">
+              High-intent keyword research
+            </div>
+
+            <div className="included-item">
+              Strategic campaign structure
+            </div>
+
+            <div className="included-item">
+              Conversion-focused ad copy
+            </div>
+
+            <div className="included-item">
+              Call and form tracking
+            </div>
+
+            <div className="included-item">
+              Search-term monitoring
+            </div>
+
+            <div className="included-item">
+              Negative keyword management
+            </div>
+
+            <div className="included-item">
+              Budget and bid optimization
+            </div>
+
+            <div className="included-item">
+              Clear performance reporting
+            </div>
           </div>
         </div>
       </section>
@@ -118,29 +177,48 @@ function Services() {
         <div className="services-container">
           <div className="section-header">
             <h2>How it works</h2>
-            <p>A simple system to start generating leads — quickly and clearly.</p>
+
+            <p>
+              A clear process for building, launching, and improving your
+              lead-generation campaigns.
+            </p>
           </div>
 
           <div className="steps-grid">
             <div className="step-card">
               <span>01</span>
-              <h3>Strategy</h3>
-              <p>Understand your business, goals, and target customers.</p>
+              <h3>Discovery</h3>
+              <p>
+                We review your services, target market, goals, current
+                marketing, and customer acquisition process.
+              </p>
             </div>
+
             <div className="step-card">
               <span>02</span>
-              <h3>Targeting</h3>
-              <p>Identify what your customers are searching for.</p>
+              <h3>Strategy</h3>
+              <p>
+                We identify valuable searches, build the campaign structure,
+                and determine how leads will be tracked.
+              </p>
             </div>
+
             <div className="step-card">
               <span>03</span>
               <h3>Launch</h3>
-              <p>Run campaigns and connect them to conversion-focused pages.</p>
+              <p>
+                Your campaigns go live with focused targeting, persuasive ads,
+                and conversion tracking in place.
+              </p>
             </div>
+
             <div className="step-card">
               <span>04</span>
               <h3>Optimize</h3>
-              <p>Refine performance to improve lead quality and cost.</p>
+              <p>
+                We analyze real performance data, reduce wasted spend, and
+                improve lead volume and quality over time.
+              </p>
             </div>
           </div>
         </div>
@@ -150,39 +228,76 @@ function Services() {
       <section className="services-section alt">
         <div className="services-container">
           <div className="section-header">
-            <h2>FAQ</h2>
-            <p>Quick answers about how it works.</p>
+            <h2>Frequently asked questions</h2>
+
+            <p>
+              Clear answers about Google Ads, lead generation, and working
+              with VirtuNet.
+            </p>
           </div>
 
           <div className="faq">
             <div className="faq-item">
-              <h3>How long does it take to get started?</h3>
+              <h3>How long does it take to launch?</h3>
               <p>
-                Most campaigns can be planned and launched within a few days once we align on your goals and market.
+                Most campaigns can be researched, built, and launched within
+                several business days once we have the necessary information
+                and access.
               </p>
             </div>
+
             <div className="faq-item">
-              <h3>Do I need a website already?</h3>
+              <h3>Do I need an existing website?</h3>
               <p>
-                No — we can use your existing site or set up a simple page designed to convert traffic into leads.
+                Not necessarily. We can review your current website and
+                recommend whether it is ready for paid traffic or whether a
+                focused landing page would improve conversions.
               </p>
             </div>
+
             <div className="faq-item">
-              <h3>How do the leads come in?</h3>
+              <h3>Where do the leads come from?</h3>
               <p>
-                Leads come from people actively searching on Google and are directed to your business through targeted campaigns.
+                Your ads appear when potential customers search Google for
+                services related to your business. Interested prospects can
+                then call you or submit an inquiry.
               </p>
             </div>
+
             <div className="faq-item">
-              <h3>Do you manage everything?</h3>
+              <h3>Do you guarantee a specific number of leads?</h3>
               <p>
-                Yes — from setup to ongoing optimization, everything is handled so you can focus on closing the leads.
+                No responsible agency can guarantee exact results. Search
+                demand, competition, budget, location, offer quality, and your
+                sales process all affect performance. We focus on measurable
+                improvement and transparent reporting.
               </p>
             </div>
+
             <div className="faq-item">
-              <h3>Can this work for my business?How do the leads come in?</h3>
+              <h3>Do you manage the campaigns after launch?</h3>
               <p>
-                If people are searching for your service, there’s usually an opportunity. We’ll confirm this on the initial call.
+                Yes. Ongoing management includes monitoring search terms,
+                improving targeting, testing ads, controlling wasted spend,
+                and identifying opportunities to scale.
+              </p>
+            </div>
+
+            <div className="faq-item">
+              <h3>Can Google Ads work for my business?</h3>
+              <p>
+                Google Ads is usually strongest when customers are already
+                searching for the service you provide. We evaluate search
+                demand, competition, economics, and your goals before
+                recommending a campaign.
+              </p>
+            </div>
+
+            <div className="faq-item">
+              <h3>Is the advertising budget included in your fee?</h3>
+              <p>
+                No. Your Google Ads budget is paid directly to Google and is
+                separate from VirtuNet’s setup or campaign-management fees.
               </p>
             </div>
           </div>
@@ -194,11 +309,16 @@ function Services() {
         <div className="services-container">
           <div className="final-box">
             <div>
-              <h2>Ready to get started?</h2>
-              <p>Tell me what you need and I’ll respond with the next steps.</p>
+              <h2>Ready to build a stronger lead pipeline?</h2>
+
+              <p>
+                Tell us about your business, your current marketing, and the
+                results you want to achieve.
+              </p>
             </div>
+
             <Link to="/contact" className="btn primary">
-              Contact
+              Request a Consultation
             </Link>
           </div>
         </div>

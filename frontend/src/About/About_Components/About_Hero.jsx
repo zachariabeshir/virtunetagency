@@ -1,5 +1,5 @@
 import "./Style/About_Hero.css";
-import heroImage from "../../Images/developers-workspace.png"; // add your chosen image file here
+import heroImage from "../../Images/developers-workspace.png";
 import { Link } from "react-router-dom";
 
 function About_Hero() {
@@ -13,11 +13,13 @@ function About_Hero() {
 
       <div className="about-hero-content">
         <h1>About VirtuNet</h1>
+
         <p>
-          I’m Zacharia Beshir, based in Orange County. 
-          I help businesses generate consistent leads 
-          using Google Search campaigns, supported by 
-          clean, conversion-focused pages.
+          VirtuNet is a performance marketing agency focused on helping
+          businesses generate consistent, high-quality leads through
+          Google Search advertising and data-driven optimization. Every
+          strategy is built to maximize return on investment and create
+          sustainable business growth.
         </p>
 
         <div className="about-hero-actions">

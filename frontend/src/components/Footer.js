@@ -6,7 +6,7 @@ function Footer() {
       <div className="footer-container">
         <div>
           <h3 className="footer-logo">VirtuNet</h3>
-          <p className="footer-text">Modern websites built fast and clean.</p>
+          <p className="footer-text">Helping local service businesses turn advertising spend into measurable, qualified jobs - and showing them exactly where their money is going.</p>
         </div>
 
         <div className="footer-links">

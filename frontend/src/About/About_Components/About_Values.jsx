@@ -5,52 +5,52 @@ function About_Values() {
     <section className="about-values">
       <div className="about-values-container">
         <div className="about-values-header">
-          <h2>Standards I build with</h2>
+          <h2>Standards we market by</h2>
           <p>
-            No overpromising. No clutter. Just a clean system built to perform and convert.
+            No vanity metrics. No empty promises. Just measurable growth backed by strategy and data.
           </p>
         </div>
 
         <div className="values-grid">
           <div className="value-card">
-            <h3>Clarity over hype</h3>
+            <h3>Results over reports</h3>
             <p>
-              Simple messaging and clear layouts that help customers understand your offer and take action quickly.
+              We focus on qualified leads, booked appointments, and revenue—not clicks that don't turn into customers.
             </p>
           </div>
 
           <div className="value-card">
-            <h3>Performance matters</h3>
+            <h3>Data-driven decisions</h3>
             <p>
-              Fast-loading pages and clean structure so your site performs well under real traffic.
+              Every campaign is optimized using real performance data, not assumptions or guesswork.
             </p>
           </div>
 
           <div className="value-card">
-            <h3>Mobile-first always</h3>
+            <h3>Transparency always</h3>
             <p>
-              Designed for where your customers are — phones first, then scaled to every screen.
+              Clear communication, honest reporting, and complete visibility into where your marketing budget goes.
             </p>
           </div>
 
           <div className="value-card">
-            <h3>Honest process</h3>
+            <h3>Continuous optimization</h3>
             <p>
-              Clear timelines, consistent updates, and straightforward communication from start to scale.
+              Winning campaigns aren't built once—they're tested, refined, and improved every month.
             </p>
           </div>
 
           <div className="value-card">
-            <h3>Clean, maintainable code</h3>
+            <h3>High-intent traffic</h3>
             <p>
-              Structured builds that are easy to adjust as campaigns evolve and your business grows.
+              We target people actively searching for your services, helping you connect with customers ready to buy.
             </p>
           </div>
 
           <div className="value-card">
-            <h3>Built to convert</h3>
+            <h3>Built to scale</h3>
             <p>
-              Every page is designed to guide visitors toward contacting you — not just browsing.
+              Our strategies are designed to grow alongside your business, creating a reliable system for long-term lead generation.
             </p>
           </div>
         </div>
