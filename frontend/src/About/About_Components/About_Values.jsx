@@ -1,6 +1,6 @@
 import "./Style/About_Values.css";
 
-function About_Values() {
+function AboutValues() {
   return (
     <section className="about-values">
       <div className="about-values-container">
@@ -59,4 +59,4 @@ function About_Values() {
   );
 }
 
-export default About_Values;
+export default AboutValues;

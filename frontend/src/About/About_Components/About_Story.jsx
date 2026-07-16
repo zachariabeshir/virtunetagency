@@ -1,6 +1,6 @@
 import "./Style/About_Story.css";
 
-function About_Story() {
+function AboutStory() {
   return (
     <section className="about-story">
       <div className="about-story-container">
@@ -61,4 +61,4 @@ function About_Story() {
   );
 }
 
-export default About_Story;
+export default AboutStory;

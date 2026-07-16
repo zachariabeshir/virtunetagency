@@ -2,7 +2,7 @@ import "./Style/About_Hero.css";
 import heroImage from "../../Images/developers-workspace.png";
 import { Link } from "react-router-dom";
 
-function About_Hero() {
+function AboutHero() {
   return (
     <section
       className="about-hero"
@@ -35,4 +35,4 @@ function About_Hero() {
   );
 }
 
-export default About_Hero;
+export default AboutHero;

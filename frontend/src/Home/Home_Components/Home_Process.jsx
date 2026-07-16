@@ -1,7 +1,7 @@
 import "./Style/Home_Process.css";
 import { Link } from "react-router-dom";
 
-function Home_Process() {
+function HomeProcess() {
   return (
     <section className="home-process">
       <div className="home-process-container">
@@ -63,4 +63,4 @@ function Home_Process() {
   );
 }
 
-export default Home_Process;
+export default HomeProcess;

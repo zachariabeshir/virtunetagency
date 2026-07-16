@@ -1,7 +1,7 @@
 import "./Style/Home_CTA.css";
 import { Link } from "react-router-dom";
 
-function Home_CTA() {
+function HomeCTA() {
   return (
     <section className="home-cta">
       <div className="home-cta-container">
@@ -27,4 +27,4 @@ function Home_CTA() {
   );
 }
 
-export default Home_CTA;
+export default HomeCTA;

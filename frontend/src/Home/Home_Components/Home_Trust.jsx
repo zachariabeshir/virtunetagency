@@ -1,6 +1,6 @@
 import "./Style/Home_Trust.css";
 
-function Home_Trust() {
+function HomeTrust() {
   return (
     <section className="home-trust">
       <div className="home-trust-container">
@@ -54,4 +54,4 @@ function Home_Trust() {
   );
 }
 
-export default Home_Trust;
+export default HomeTrust;

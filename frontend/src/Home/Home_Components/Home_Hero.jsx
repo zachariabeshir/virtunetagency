@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./Style/Home_Hero.css";
 import home_hero_img from "../../Images/man-on-computer-typing.jpg";
 
-function Home_Hero() {
+function HomeHero() {
   return (
     <section
       className="home-hero"
@@ -46,4 +46,4 @@ function Home_Hero() {
   );
 }
 
-export default Home_Hero;
+export default HomeHero;

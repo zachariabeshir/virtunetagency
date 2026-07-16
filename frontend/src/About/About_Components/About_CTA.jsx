@@ -1,7 +1,7 @@
 import "./Style/About_CTA.css";
 import { Link } from "react-router-dom";
 
-function About_CTA() {
+function AboutCTA() {
   return (
     <section className="about-cta">
       <div className="about-cta-container">
@@ -27,4 +27,4 @@ function About_CTA() {
   );
 }
 
-export default About_CTA;
+export default AboutCTA;

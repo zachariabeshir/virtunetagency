@@ -1,6 +1,6 @@
 import "./Style/Home_Services.css";
 
-function Home_Services() {
+function HomeServices() {
   return (
     <section className="home-services">
       <div className="home-services-container">
@@ -56,4 +56,4 @@ function Home_Services() {
   );
 }
 
-export default Home_Services;
+export default HomeServices;
