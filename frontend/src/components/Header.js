@@ -22,7 +22,7 @@ function Header() {
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo" aria-label="VirtuNet homepage">
-          <span className="logo-mark">V</span>
+          <span className="logo-mark">VN</span>
           <span>VirtuNet</span>
         </Link>
 

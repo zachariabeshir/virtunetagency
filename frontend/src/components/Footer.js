@@ -17,7 +17,7 @@ function Footer() {
               className="footer-logo"
               aria-label="VirtuNet homepage"
             >
-              <span className="footer-logo-mark">V</span>
+              <span className="footer-logo-mark">VN</span>
               <span>VirtuNet</span>
             </Link>
 
