@@ -1,2 +1,55 @@
+:root {
+  --vn-blue: #2563eb;
+  --vn-blue-dark: #1e40af;
+  --vn-navy: #0f172a;
+  --vn-slate: #475569;
+  --vn-light: #f8fafc;
+  --vn-white: #ffffff;
+}
+
 * {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.home-page {
+  overflow: hidden;
+  background: var(--vn-white);
+}
+
+.home-section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 14px;
+  color: var(--vn-blue);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.home-section-label::before {
+  content: "";
+  width: 28px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

@@ -1,0 +1,97 @@
+.home-funnel {
+  padding: clamp(88px, 11vw, 140px) 0;
+  background:
+    radial-gradient(circle at 80% 10%, rgba(37, 99, 235, 0.16), transparent 28%),
+    #0f172a;
+}
+
+.home-funnel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(50px, 8vw, 100px);
+  align-items: center;
+}
+
+.home-funnel-copy .home-section-label {
+  color: #60a5fa;
+}
+
+.home-funnel-copy h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2.1rem, 4.5vw, 3.8rem);
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+}
+
+.home-funnel-copy > p {
+  margin: 22px 0 0;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.8;
+}
+
+.home-funnel-visual {
+  position: relative;
+  display: grid;
+  gap: 16px;
+}
+
+.funnel-track {
+  position: absolute;
+  top: 44px;
+  bottom: 44px;
+  left: 28px;
+  width: 2px;
+  background: linear-gradient(#3b82f6, rgba(59, 130, 246, 0.08));
+}
+
+.funnel-step {
+  position: relative;
+  padding: 20px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 19px;
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 18px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.055);
+  backdrop-filter: blur(14px);
+}
+
+.funnel-step-icon {
+  position: relative;
+  z-index: 1;
+  width: 56px;
+  height: 56px;
+  border-radius: 17px;
+  display: grid;
+  place-items: center;
+  color: #bfdbfe;
+  background: #14213b;
+}
+
+.funnel-step span {
+  color: #60a5fa;
+  font-size: 0.68rem;
+  font-weight: 900;
+}
+
+.funnel-step h3 {
+  margin: 4px 0 5px;
+  color: #ffffff;
+}
+
+.funnel-step p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.55;
+}
+
+@media (max-width: 900px) {
+  .home-funnel-container {
+    grid-template-columns: 1fr;
+  }
+}

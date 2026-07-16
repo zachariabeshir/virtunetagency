@@ -2,7 +2,12 @@ const mongoose = require("mongoose");
 
 const contactMessageSchema = new mongoose.Schema(
   {
-    name: { type: String, required: true, trim: true, maxlength: 80 },
+    name: {
+      type: String,
+      required: true,
+      trim: true,
+      maxlength: 80,
+    },
     email: {
       type: String,
       required: true,
@@ -10,8 +15,36 @@ const contactMessageSchema = new mongoose.Schema(
       lowercase: true,
       maxlength: 120,
     },
-    company: { type: String, trim: true, maxlength: 120, default: "" },
-    message: { type: String, required: true, trim: true, maxlength: 3000 },
+    company: {
+      type: String,
+      trim: true,
+      maxlength: 120,
+      default: "",
+    },
+    phone: {
+      type: String,
+      trim: true,
+      maxlength: 40,
+      default: "",
+    },
+    service: {
+      type: String,
+      trim: true,
+      maxlength: 120,
+      default: "",
+    },
+    budget: {
+      type: String,
+      trim: true,
+      maxlength: 80,
+      default: "",
+    },
+    message: {
+      type: String,
+      required: true,
+      trim: true,
+      maxlength: 3000,
+    },
   },
   { timestamps: true }
 );

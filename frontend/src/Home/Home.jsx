@@ -2,19 +2,21 @@ import "./Home.css";
 
 import HomeHero from "./Home_Components/Home_Hero.jsx";
 import HomeTrust from "./Home_Components/Home_Trust.jsx";
+import HomeFunnel from "./Home_Components/Home_Funnel.jsx";
 import HomeServices from "./Home_Components/Home_Services.jsx";
 import HomeProcess from "./Home_Components/Home_Process.jsx";
 import HomeCTA from "./Home_Components/Home_CTA.jsx";
 
 function Home() {
   return (
-    <>
+    <main className="home-page">
       <HomeHero />
       <HomeTrust />
+      <HomeFunnel />
       <HomeServices />
       <HomeProcess />
       <HomeCTA />
-    </>
+    </main>
   );
 }
 

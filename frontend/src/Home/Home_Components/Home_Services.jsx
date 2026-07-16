@@ -1,55 +1,64 @@
+import { motion } from "framer-motion";
 import "./Style/Home_Services.css";
+
+const services = [
+  {
+    number: "01",
+    title: "Google Search Ads",
+    text: "Reach prospects at the moment they are actively searching for the service your business provides.",
+  },
+  {
+    number: "02",
+    title: "Conversion Landing Pages",
+    text: "Create a focused path from ad click to phone call or form submission with clear messaging and strong calls to action.",
+  },
+  {
+    number: "03",
+    title: "Market & Keyword Targeting",
+    text: "Identify valuable searches, prioritize profitable service areas, and reduce spend on low-intent traffic.",
+  },
+  {
+    number: "04",
+    title: "Tracking & Optimization",
+    text: "Measure calls and forms, review performance, and continuously refine the campaign around better opportunities.",
+  },
+];
 
 function HomeServices() {
   return (
     <section className="home-services">
       <div className="home-services-container">
-        <div className="home-services-header">
-          <h2>Customer Acquisition Systems</h2>
-
+        <motion.div
+          className="home-services-header"
+          initial={{ opacity: 0, y: 28 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+        >
+          <p className="home-section-label">Capabilities</p>
+          <h2>A complete customer acquisition system.</h2>
           <p>
-            We use Google Search Ads, conversion-focused landing pages, and
-            performance tracking to turn high-intent searches into qualified
-            business opportunities.
+            Strategy, ads, landing pages, and measurement work together so your
+            campaign is built around real business outcomes.
           </p>
-        </div>
+        </motion.div>
 
         <div className="services-grid">
-          <div className="service-card">
-            <h3>Google Search Ads Management</h3>
-
-            <p>
-              Reach potential customers at the moment they are actively
-              searching for the services your business provides.
-            </p>
-          </div>
-
-          <div className="service-card">
-            <h3>Conversion-Focused Landing Pages</h3>
-
-            <p>
-              Create a clear path from ad click to phone call or form
-              submission with focused messaging and strong calls to action.
-            </p>
-          </div>
-
-          <div className="service-card">
-            <h3>Keyword and Market Targeting</h3>
-
-            <p>
-              Identify valuable searches, target the right service areas, and
-              focus your budget on the customers most likely to take action.
-            </p>
-          </div>
-
-          <div className="service-card">
-            <h3>Campaign Optimization and Scaling</h3>
-
-            <p>
-              Continuously improve targeting, ads, and budget allocation to
-              reduce wasted spend and create more efficient growth.
-            </p>
-          </div>
+          {services.map((service, index) => (
+            <motion.article
+              className="service-card"
+              key={service.number}
+              initial={{ opacity: 0, y: 34 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.55, delay: index * 0.08 }}
+              whileHover={{ y: -9 }}
+            >
+              <span className="service-card-number">{service.number}</span>
+              <h3>{service.title}</h3>
+              <p>{service.text}</p>
+            </motion.article>
+          ))}
         </div>
       </div>
     </section>

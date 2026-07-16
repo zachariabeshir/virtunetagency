@@ -1,151 +1,221 @@
-:root {
-  --blue: #2563eb;
-  --blueDark: #1e40af;
-  --text: #0f172a;
-  --white: #ffffff;
-}
-
 .home-hero {
   position: relative;
-  width: 100%;
-  min-height: clamp(520px, 70vh, 760px);
-  border-radius: 18px;
+  width: min(calc(100% - 32px), 1240px);
+  min-height: clamp(610px, 78vh, 820px);
+  margin: 24px auto 0;
+  border-radius: 28px;
   overflow: hidden;
-
-  /* background image */
+  isolation: isolate;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-
-  /* keeps hero aligned with the rest of your site */
-  max-width: 1200px;
-  margin: 24px auto 0;
+  box-shadow: 0 30px 80px rgba(15, 23, 42, 0.16);
 }
 
-/* gradient overlay (blue + dark for readability) */
 .home-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    110deg,
-    rgba(15, 23, 42, 0.82) 0%,
-    rgba(37, 99, 235, 0.4) 45%,
-    rgba(15, 23, 42, 0.55) 100%
-  );
+  z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(6, 12, 28, 0.96) 0%, rgba(10, 24, 52, 0.88) 44%, rgba(15, 23, 42, 0.48) 100%),
+    linear-gradient(180deg, rgba(37, 99, 235, 0.1), rgba(15, 23, 42, 0.5));
 }
 
 .home-hero-content {
   position: relative;
-  z-index: 1;
-
-  height: 100%;
-  padding: clamp(28px, 6vw, 72px);
-
-  display: grid;
-  align-content: center;
-  gap: 18px;
-
-  max-width: 720px;
+  z-index: 2;
+  min-height: inherit;
+  width: min(720px, 100%);
+  padding: clamp(48px, 7vw, 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .home-hero-kicker {
-  color: rgba(255, 255, 255, 0.85);
-  font-weight: 700;
-  letter-spacing: 0.04em;
+  margin: 0 0 20px;
+  color: #bfdbfe;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  font-size: 0.9rem;
-  margin: 0;
 }
 
 .home-hero-title {
-  color: var(--white);
-  font-size: clamp(2rem, 4.3vw, 3.2rem);
-  line-height: 1.05;
-  letter-spacing: -0.02em;
   margin: 0;
+  color: #ffffff;
+  font-size: clamp(2.8rem, 6.2vw, 5.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.home-hero-highlight {
+  color: #93c5fd;
 }
 
 .home-hero-subtitle {
-  color: rgba(255, 255, 255, 0.88);
+  margin: 26px 0 0;
+  max-width: 650px;
+  color: rgba(255, 255, 255, 0.78);
   font-size: clamp(1rem, 1.6vw, 1.2rem);
-  line-height: 1.6;
-  margin: 0;
+  line-height: 1.75;
 }
 
 .home-hero-actions {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: max-content;
+  display: flex;
+  flex-wrap: wrap;
   gap: 12px;
-  margin-top: 8px;
+  margin-top: 34px;
 }
 
 .home-hero-btn {
+  min-height: 52px;
+  padding: 0 20px;
+  border-radius: 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   text-decoration: none;
-  font-weight: 700;
-  border-radius: 12px;
-  padding: 12px 16px;
-  font-size: 1rem;
-  transition: transform 0.12s ease, background 0.15s ease, color 0.15s ease;
+  font-weight: 800;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
 }
 
 .home-hero-btn.primary {
-  background: var(--blue);
-  color: white;
+  color: #ffffff;
+  background: #2563eb;
+  box-shadow: 0 14px 32px rgba(37, 99, 235, 0.35);
 }
 
 .home-hero-btn.primary:hover {
-  background: var(--blueDark);
-  transform: translateY(-1px);
+  transform: translateY(-3px);
+  background: #1d4ed8;
 }
 
 .home-hero-btn.secondary {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
 }
 
 .home-hero-btn.secondary:hover {
-  background: rgba(255, 255, 255, 0.16);
-  transform: translateY(-1px);
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.14);
 }
 
 .home-hero-badges {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: max-content;
-  gap: 10px;
-  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 28px;
 }
 
 .home-hero-badge {
-  color: rgba(255, 255, 255, 0.92);
-  background: rgba(15, 23, 42, 0.35);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  padding: 8px 10px;
+  padding: 8px 11px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
   border-radius: 999px;
-  font-weight: 600;
-  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.76);
+  background: rgba(15, 23, 42, 0.34);
+  backdrop-filter: blur(12px);
+  font-size: 0.78rem;
+  font-weight: 700;
 }
 
-/* Mobile: stack buttons + badges cleanly */
+.hero-system-card {
+  position: absolute;
+  z-index: 3;
+  right: clamp(30px, 5vw, 74px);
+  bottom: clamp(30px, 6vw, 70px);
+  width: min(360px, calc(100% - 48px));
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 20px;
+  background: rgba(9, 19, 41, 0.72);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(20px);
+}
+
+.hero-system-top {
+  display: flex;
+  gap: 9px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hero-system-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #60a5fa;
+}
+
+.hero-system-row {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.hero-system-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  color: #bfdbfe;
+  background: rgba(37, 99, 235, 0.16);
+}
+
+.hero-system-row strong,
+.hero-system-row small {
+  display: block;
+}
+
+.hero-system-row strong {
+  color: #ffffff;
+  font-size: 0.88rem;
+}
+
+.hero-system-row small {
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.76rem;
+}
+
+.hero-system-line {
+  display: block;
+  width: 1px;
+  height: 12px;
+  margin: -6px 0 -6px 20px;
+  background: linear-gradient(#60a5fa, rgba(96, 165, 250, 0.15));
+}
+
+@media (max-width: 1050px) {
+  .hero-system-card {
+    display: none;
+  }
+}
+
 @media (max-width: 640px) {
   .home-hero {
-    border-radius: 14px;
-    margin: 16px auto 0;
+    width: calc(100% - 20px);
+    min-height: 660px;
+    margin-top: 10px;
+    border-radius: 20px;
   }
 
-  .home-hero-actions {
-    grid-auto-flow: row;
-    grid-auto-columns: 1fr;
+  .home-hero-content {
+    padding: 42px 24px;
   }
 
+  .home-hero-actions,
   .home-hero-btn {
-    text-align: center;
-  }
-
-  .home-hero-badges {
-    grid-auto-flow: row;
-    justify-items: start;
+    width: 100%;
   }
 }
